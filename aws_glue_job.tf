@@ -3,7 +3,7 @@ resource "aws_glue_job" "example" {
   role_arn     = var.glue-role
   glue_version = var.glue-version# "4.0"
   worker_type  = var.glue-worker-type#"Z.2X"
-
+  number_of_workers = 2
   command {
     #name            = var.glue-command-name #"glueray"
     #python_version  = "3.9"
