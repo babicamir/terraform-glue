@@ -10,4 +10,6 @@ resource "aws_glue_job" "example" {
     #runtime         = "Ray2.4"
     script_location = var.glue-script_location#"s3://${aws_s3_bucket.example.bucket}/example.py"
   }
+
+  default_arguments = var.glue-default-arguments
 }

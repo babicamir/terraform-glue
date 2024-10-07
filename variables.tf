@@ -36,4 +36,7 @@ variable "glue-command-name" {
 }
 
 variable "glue-script_location" {
-} 
+}
+
+variable "glue-default-arguments" {
+}
