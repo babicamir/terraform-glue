@@ -26,10 +26,22 @@ variable "deployment-role" {
 variable "glue-role" {
 }
 
+variable "glue-description" {
+}
+
 variable "glue-version" {
 }
 
 variable "glue-worker-type" {
+}
+
+variable "glue-number-of-workers" {
+}
+
+variable "glue-max-retries" {
+}
+
+variable "glue-security-configuration" {
 }
 
 variable "glue-command-name" {

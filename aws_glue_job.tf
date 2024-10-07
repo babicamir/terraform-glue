@@ -1,9 +1,12 @@
 resource "aws_glue_job" "example" {
   name         = "${var.project-name}-${var.env}-${var.name}"
+  description = var.glue-description
   role_arn     = var.glue-role
   glue_version = var.glue-version# "4.0"
   worker_type  = var.glue-worker-type#"Z.2X"
-  number_of_workers = 2
+  number_of_workers =  var.glue-number-of-workers
+  max_retries = var.glue-max-retries
+  security_configuration = var.glue-security-configuration
   command {
     #name            = var.glue-command-name #"glueray"
     #python_version  = "3.9"
