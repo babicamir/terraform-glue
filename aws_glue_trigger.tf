@@ -1,7 +1,7 @@
 resource "aws_glue_trigger" "glue" {
   for_each = var.glue-triggers
 
-  name     = "${var.project-name}-${var.env}-${each.key}"
+  name     = "${var.project-name}-${var.env}-${var.name}-${each.key}"
   type     = each.value.Type
   schedule = each.value.Schedule
   start_on_creation = each.value.StartOnCreation
