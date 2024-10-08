@@ -52,3 +52,10 @@ variable "glue-script_location" {
 
 variable "glue-default-arguments" {
 }
+
+variable "glue-timeout" {
+}
+
+variable "glue-max-concurrent-runs" {
+}
+
