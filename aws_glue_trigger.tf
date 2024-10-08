@@ -1,5 +1,5 @@
 resource "aws_glue_trigger" "glue" {
-  for_each = var.glue_triggers
+  for_each = var.glue-triggers
 
   name     = each.key
   type     = each.value.Type
