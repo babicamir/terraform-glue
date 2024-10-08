@@ -14,6 +14,6 @@ resource "aws_glue_job" "glue" {
   command {
     script_location = var.glue-script_location
   }
-
   default_arguments = var.glue-default-arguments
+  tags = var.glue-tags
 }
