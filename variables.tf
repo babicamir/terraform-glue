@@ -63,10 +63,14 @@ variable "glue-tags" {
 }
 
 
-variable "glue-triggers" {
+variable "glue_triggers" {
   type = map(object({
     Type            = string
     Schedule        = string
     StartOnCreation = bool
+    Actions         = object({
+      Timeout   = number
+      Arguments = map(string)
+    })
   }))
 }
