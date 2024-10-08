@@ -63,7 +63,7 @@ variable "glue-tags" {
 }
 
 
-variable "glue_triggers" {
+variable "glue-triggers" {
   type = map(object({
     Type            = string
     Schedule        = string
