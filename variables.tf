@@ -59,5 +59,5 @@ variable "glue-timeout" {
 variable "glue-max-concurrent-runs" {
 }
 
-variable "glue-tagsglue-tags" {
+variable "glue-tags" {
 }
