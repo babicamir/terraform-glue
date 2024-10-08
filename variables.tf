@@ -61,3 +61,12 @@ variable "glue-max-concurrent-runs" {
 
 variable "glue-tags" {
 }
+
+
+variable "glue_triggers" {
+  type = map(object({
+    Type            = string
+    Schedule        = string
+    StartOnCreation = bool
+  }))
+}
