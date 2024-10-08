@@ -9,6 +9,6 @@ resource "aws_glue_trigger" "glue" {
     job_name = aws_glue_job.glue.name  # Replace with your actual Glue job name
     arguments = each.value.Actions.Arguments
     timeout   = each.value.Actions.Timeout
-    security_configuration = each.value.Actions.SecurityConfiguration 
+    security_configuration = each.value.Actions.SecurityConfiguration
   }
 }
