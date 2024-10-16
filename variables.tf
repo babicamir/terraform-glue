@@ -50,6 +50,12 @@ variable "glue-command-name" {
 variable "glue-script-location" {
 }
 
+variable "glue-common-folder-location" {
+}
+
+variable "devops-s3-bucket" {
+}
+
 variable "glue-default-arguments" {
 }
 
