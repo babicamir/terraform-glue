@@ -47,7 +47,7 @@ variable "glue-security-configuration" {
 variable "glue-command-name" {
 }
 
-variable "glue-script_location" {
+variable "glue-script-location" {
 }
 
 variable "glue-default-arguments" {
